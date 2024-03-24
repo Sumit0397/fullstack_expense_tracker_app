@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <header class="navbar_container">
+        <nav class="navbar">
+            <h3>Expense Tracker</h3>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="form-container">
+            <form action="/post/addExpense" method="POST" class="form">
+                <h3>Add Your Expenses</h3>
+                <div>
+                    <label for="category">Choose Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">--categories--</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Groceries">Groceries</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="description">Description:</label>
+                    <input type="text" name="description" required/>
+                </div>
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input type="number" name="amount" required/>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="table_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Amount(&#8377;)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+        integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

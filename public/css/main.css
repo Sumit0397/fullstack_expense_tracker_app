@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(56, 63, 70);
+    color: #fff;
+}
+
+.navbar_container {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(98, 235, 98);
+    color: rgb(83, 83, 238);
+    position: sticky;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar h3 {
+    cursor: pointer;
+    font-weight: 1200;
+}
+
+.navbar ul>li {
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.navbar ul>li:hover,
+.navbar ul>li:active {
+    background-color: slategray;
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: slategray;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form h3{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-size: 24px;
+}
+
+.form label{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+}
+
+.form input{
+    padding: 0.5rem;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+
+.btn:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: rgb(40, 46, 53);
+    color: #fff;
+}
+
+.table_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.table_container table {
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+td {
+    padding: 1rem;
+}
+
+td>button{
+    cursor: pointer;
+    margin: 0.3rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
